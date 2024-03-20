@@ -48,8 +48,8 @@ qa_retriever = vector_search.as_retriever(
 )
 
 # Prompt Template
-prompt_template = """Use the following pieces of context to answer the question at the end. If you don't know the answer, just say that you don't know only, don't try to make up an answer. -Importtant:Please give the response of half line only for all questions and response should not be greater than maximum 40 words, complete your communication withinit,. also you have to give your response in just one sentence if answer is not found in context, try to get relavent answer but it should be from context, not from all over the world, you can also suggest the user that are you asking for this from the context, dont forget. ".
-{context}
+prompt_template = """Use the following pieces of context to answer the question at the end. If you don't know the answer, just say that you don't know only, don't try to make up an answer. -Importtant:Please give the response of 1 line only for all questions and response should not be greater than maximum 40 words, complete your communication withinit,. if answer is not found in context, try to get relavent answer but it should be from context, not from all over the world, you can also suggest the user that are you asking for this you are AI Banker".
+ {context}
 Question: "{question}"
 """
 
