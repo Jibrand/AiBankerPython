@@ -20,7 +20,7 @@ from bson import ObjectId
  
  
 
-os.environ["OPENAI_API_KEY"] = 'apikey'
+os.environ.get('OPENAI_API_KEY')
 
 app = Flask(__name__)
 CORS(app)
