@@ -11,3 +11,4 @@ pypdf
 pymongo 
 langchain-openai 
 tiktoken 
+flask-cors
